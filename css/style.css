@@ -1,0 +1,340 @@
+/*----------------------------------------------
+
+    Developed by Octavian Mos 2016
+    octavianhd@gmail.com
+
+-----------------------------------------------*/
+/*----------------------------------------------
+
+    Table of content:
+
+    #Main;
+    #Header;
+    #Navigation;
+    #About us section;
+    #Services section;
+    #What we do section;
+    #Our work section;
+    #Contact section;
+    #Footer;
+    #Scroll Up;
+    #Responsive.
+-----------------------------------------------*/
+
+/*---------------------------Main-----------------------------*/
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	font-family: verdana,sans-serif;
+	font-size: normal;
+	margin: 0;
+}
+p{
+	text-indent: 20px;
+}
+ul{
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+a,button {
+	transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+}
+a:hover,a:focus{
+	text-decoration: none;
+}
+.separator{
+	margin: 0;
+	padding: 0;
+	width: 10%;
+	height: 3px;
+	background-color: #000;
+	display: inline-block;
+}
+.border-div{
+	margin: 40px 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 0 3px 3px 3px;
+	border-color: black;
+}
+
+/*-------------------Header------------------------------*/
+
+header{
+	width: 100%;
+	height: 650px;
+	background-image: url(../pics/header-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+}
+#elipse{
+	padding-top: 180px;
+	/*width: 40px;
+	height: 40px;*/
+}
+header h2{
+	padding: 30px 0;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+header p{
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+/*header button{
+	position: center;
+}*/
+
+/*------------------------------Navigation----------------------------*/
+.navi ul{
+	position: relative;
+	margin-top: 80px;
+	/*padding: 80px 0 60px 0;*/
+}
+.navi li{
+	padding: 0 20px;
+}
+.navi li a{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 3px #000;
+}
+.navi li a:hover{
+	text-shadow: none;
+}
+
+.nav-toggle{
+	height: 40px;
+	background-color: transparent;
+	padding: 0 15px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.icon-bar{
+	background-color: #fff;
+}
+.nav-hiding{
+	display: none;
+	margin-top: 40px;
+}
+/*--------------------------------About us section-------------------------*/
+
+#about{
+	width: 100%;
+	text-align: center;	
+} 
+#about h2{
+	margin-top: -20px;
+	letter-spacing: 4px;
+	font-weight: 500;
+}
+#about p{
+	padding: 20px 0;	
+}
+
+/*-------------------------------Services section------------------------*/
+
+#services{
+	width: 100%;
+	/*height: 500px;*/
+	background-image: url(../pics/services-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: #fff;
+}
+#services h2{
+	margin-top: -20px;
+	letter-spacing: 4px;
+	font-weight: 500;
+}
+#services p{
+	padding: 40px 10px;
+}
+
+
+/*--------------------------------What we do section------------------*/
+
+#what{
+	width: 100%;
+	text-align: center;
+}
+#what h2{
+	margin-top: -20px;
+	letter-spacing: 4px;
+	font-weight: 500;
+}
+#what h3{
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+#what p{
+	padding: 20px 0;
+}
+#what img{
+	padding-top: 40px;
+}
+
+/*--------------------------------Our work section--------------------*/
+
+#work{
+	width: 100%;
+}
+#work1{
+	margin:10px 5px 5px 10px;
+	width: 335px;
+	height: 150px;
+	background-image: url(../pics/work1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work2{
+	margin:10px 5px 5px 5px;
+	width: 505px;
+	height: 150px;
+	background-image: url(../pics/work2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work3{
+	margin:10px 10px 5px 5px;
+	width: 335px;
+	height: 150px;
+	background-image: url(../pics/work3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work4{
+	margin:5px 5px 10px 10px;
+	width: 335px;
+	height: 150px;
+	background-image: url(../pics/work4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work5{
+	margin:5px 5px 10px 5px;
+	width: 505px;
+	height: 150px;
+	background-image: url(../pics/work5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work6{
+	margin:5px 10px 10px 5px;
+	width: 335px;
+	height: 150px;
+	background-image: url(../pics/work6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#work h3{
+	position: absolute;
+	color: #fff;
+	text-indent: 3px;
+	left:20px;
+	bottom: 10px;
+}
+/*--------------------------------Contact section---------------------*/
+
+#contact{
+	width: 100%;
+	text-align: center;
+}
+#contact h2{
+	margin-top: -20px;
+	letter-spacing: 4px;
+	font-weight: 500;
+}
+#contact p{
+	padding: 20px 0;
+}
+
+#contact button{
+	position:center;
+	margin: 30px 0 50px;
+	padding: 15px 50px;
+	background-color: #333333;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+#contact button:hover{
+	background-color: #595959;
+	box-shadow: 5px 5px 5px #888888;
+}
+/*-------------------------------Footer-------------------------------*/
+
+footer {
+	padding: 20px 0;
+}
+footer img{
+	padding: 10px 0;
+}
+/*-----------------------Scroll Up------------------------*/
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: url(../pics/top.png) no-repeat;
+	opacity: .5;
+}
+#scrollUp:hover {
+	opacity: 1;
+}
+
+
+/*-------------------------Responsive------------------------*/
+
+@media screen and (max-width: 768px){
+	header{
+		height: 400px;
+	}
+	body h2{
+		font-size: 24px;
+		font-weight: 500;
+		padding: 10px 0;
+	}
+	body h3{
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.navi ul{
+		margin-top: 5px;
+	}
+	.navi li{
+		padding: 0 5px;
+	}
+	.navi li a{	
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.nav-hiding{
+	margin-top: 10px;
+	}
+	.nav-toggle{
+		height: 20px;
+	}
+	#elipse{
+		padding-top: 10px;
+	}
+	
+	#about, #services, #what, #contact, footer{
+		font-size: 12px;
+		display: flex;
+	}	
+}
